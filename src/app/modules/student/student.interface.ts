@@ -1,3 +1,4 @@
+
 export type UserName = {
     firstName: string;
     middleName: string;
@@ -36,3 +37,4 @@ export type UserName = {
     profileImg?: string;
     isActive: 'active' | 'blocked';
   };
+  
