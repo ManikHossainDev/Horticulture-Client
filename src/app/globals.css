@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Cormorant Garamond", serif;
+  font-family: "Afacad Flux", serif;
+  font-weight: 400;
+  font-style: normal; */
+  
+  /* font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal; */
+  
+  font-family: "PT Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination-container .page-item {
+  display: flex;
+  inline-size: 45px;
+  block-size: 45px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-container .page-item:hover {
+  background-color: #d1d1d1;
+}
+
+.pagination-container .page-item.active {
+  background-color: #3FB249;
+  color: white;
+}
+
+.scrollbar-hidden {
+  scrollbar-width: none; /* For Firefox */
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+
+
+
